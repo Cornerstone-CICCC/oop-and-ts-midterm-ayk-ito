@@ -1,1 +1,192 @@
 /* YOUR CSS HERE */
+.container {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+}
+header {
+  height: 10%;
+  text-align: center;
+  background-image: url("../images/sky.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerText {
+  font-size: 3rem;
+  color: white;
+}
+
+.fontOswald {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contents {
+  height: 80%;
+  display: flex;
+}
+.productArea {
+  width: 80%;
+
+  background-image: url("../images/bluesky.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.productListTitle {
+  background-color: lightgray;
+  /* background-color: rgba(211, 211, 211, 0.3); */
+  /* opacity: 0.8; */
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.productList {
+  display: grid;
+  height: 85%;
+  overflow: scroll;
+  grid-template-columns: auto auto auto;
+  row-gap: 30px;
+  column-gap: 10px;
+  justify-items: center;
+  padding: 40px 0;
+}
+.product {
+  height: 500px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: white;
+}
+.productImage {
+  /* border: 1px solid blue; */
+  text-align: center;
+  margin-top: 30px;
+}
+.productImage img {
+  width: 280px;
+  object-fit: contain;
+}
+.productInfo {
+  /* border: 1px solid green; */
+  padding: 0 10px;
+}
+.buttonArea {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+}
+.AddCart {
+  height: 35px;
+  width: 80%;
+  background-color: aqua;
+  border-radius: 20px;
+  text-align: center;
+}
+.AddCart:hover {
+  background-color: red;
+}
+
+.AddCart:active {
+  background-color: blue;
+}
+.removeCart {
+  height: 35px;
+  width: 15%;
+  background-color: aqua;
+  border-radius: 20px;
+  text-align: center;
+}
+.itemCount {
+  display: flex;
+}
+.minusCart {
+  height: 35px;
+  width: 30%;
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+}
+.plusCart {
+  height: 35px;
+  width: 30%;
+  background-color: white;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+}
+.countNum {
+  display: inline-block;
+  width: 50px;
+  line-height: 35px;
+  background-color: white;
+}
+
+nav {
+  width: 20%;
+}
+.cartNum {
+  background-color: lightgray;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items {
+  background-color: rgb(178, 178, 184);
+  height: 75%;
+  overflow: scroll;
+}
+.item {
+  /* height: 200px; */
+  /* border: 1px solid red; */
+  /* text-align: center; */
+}
+.imageArea {
+  text-align: center;
+}
+.itemInfo {
+  /* border: 1px solid green; */
+  padding: 0 5px;
+}
+
+.itemTotal {
+  background-color: lightgray;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/sky.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footerText {
+  color: white;
+}
+
+@media only screen and (max-width: 1125px) {
+  .productList {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .productList {
+    grid-template-columns: 1fr !important;
+  }
+}
