@@ -1,8 +1,6 @@
 import { Component } from "../common/Component.js";
 import cartContext from "../contexts/CartContext.js";
 
-import { CartItem } from "./CartItem.js";
-
 export class ProductItem extends Component {
   constructor() {
     super();
