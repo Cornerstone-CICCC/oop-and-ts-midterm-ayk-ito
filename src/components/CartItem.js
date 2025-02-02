@@ -23,7 +23,7 @@ export class CartItem extends Component {
               />
             </div>
             <div class="itemInfo">
-              <div>${item.title}</div>
+              <div class="itemTitle">${item.title}</div>
               <div>$ ${item.price}</div>
               <div class="buttonArea">
                 <button class="removeCart"><i class="fa-solid fa-trash"></i></button>

@@ -26,9 +26,9 @@ export class ProductItem extends Component {
               />
             </div>
             <div class="productInfo">
-              <div>${item.title}</div>
+              <div class="productTitle">${item.title}</div>
               <div>$ ${item.price}</div>
-              <div class="buttonArea"></div>
+              <div class="buttonArea buyButton"></div>
             </div>
     `;
 

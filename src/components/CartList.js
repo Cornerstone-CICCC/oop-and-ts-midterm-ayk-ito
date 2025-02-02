@@ -34,15 +34,15 @@ export class CartList extends Component {
     const cartArea = document.getElementById("wrapper-cartArea");
     cartArea.innerHTML = "";
 
-    const cartHeader = document.createElement("div");
-    cartHeader.className = "cartNum fontOswald";
-    cartHeader.innerHTML = `<div>Cart Item : ${countItem.count}</div>`;
-    cartArea.appendChild(cartHeader);
     const cartList = this.render();
     cartArea.appendChild(cartList);
     const cartFooter = document.createElement("div");
     cartFooter.className = "itemTotal fontOswald";
-    cartFooter.textContent = `Total : $ ${total.price.toFixed(2)}`;
+
+    cartFooter.innerHTML = `
+    <div>Cart Item : ${countItem.count}</div>
+    <div>Total : $ ${total.price.toFixed(2)}</div>
+    `;
     cartArea.appendChild(cartFooter);
   }
 

@@ -23,7 +23,7 @@ export class App extends Component {
           </div>
         </div>
       <nav id="wrapper-cartArea">
-        <div class="cartNum fontOswald"><div>Cart Item : 0</div></div>
+        
 
       </nav>
       </main>
@@ -40,17 +40,18 @@ export class App extends Component {
 
     const header = new Header().render();
     const footer = new Footer().render();
-    // const productList = new ProductList().render();
     const cartList = new CartList().render();
 
     container.querySelector("#wrapper-header").appendChild(header);
     container.querySelector("#wrapper-footer").appendChild(footer);
-    // container.querySelector("#wrapper-productArea").appendChild(productList);
     container.querySelector("#wrapper-cartArea").appendChild(cartList);
 
     const cartFooter = document.createElement("div");
     cartFooter.className = "itemTotal fontOswald";
-    cartFooter.textContent = "Total : $0";
+    cartFooter.innerHTML = `
+    <div>Cart Item : 0</div>
+    <div>Total : $0</div>
+    `;
 
     container.querySelector("#wrapper-cartArea").appendChild(cartFooter);
 
